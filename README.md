@@ -1,7 +1,7 @@
 # CommandsApp
 Aplicación web para consultar y gestionar comandos de terminal comunes en diferentes tecnologías. Incluye una extensa colección de comandos para Git, Linux, Python, Docker, PostgreSQL, PowerShell, Apache, Nginx, OpenSSL, Let's Encrypt y SSH.
 
-🌐 Demo en Vivo: [commandsapp](http://https://commandsapp.vercel.app "commandsapp")
+ Demo en Vivo: [commandsapp](https://commandsapp.vercel.app "commandsapp")
 
 ![image](https://github.com/user-attachments/assets/5dc16b58-4d0b-4ad2-938e-3ad7b7c95349)
 
