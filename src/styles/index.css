@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  @apply fixed top-0 left-0 h-screen w-64
+         bg-gray-100 dark:bg-gray-900 
+         shadow-lg z-50
+         overflow-y-auto;
+}
+
+.nav-link {
+  @apply flex items-center px-4 py-3 
+         text-gray-700 dark:text-gray-200 
+         hover:bg-gray-200 dark:hover:bg-gray-800 
+         rounded-lg mx-2 transition-colors;
+}
+
+.nav-link.active {
+  @apply bg-indigo-600 text-white;
+}
+
+.nav-link-icon {
+  @apply h-5 w-5 mr-3 transition-colors
+         text-gray-500 dark:text-gray-400;
+}
+
+@layer components {
+  .sidebar {
+    @apply fixed lg:static top-0 left-0 h-screen w-64 
+           bg-gray-100 dark:bg-gray-900
+           shadow-lg z-50;
+  }
+  
+  .nav-link {
+    @apply flex items-center px-4 py-3 
+           text-gray-700 dark:text-gray-300
+           hover:bg-gray-200 dark:hover:bg-gray-800 
+           rounded-lg mx-2 transition-colors;
+  }
+
+  .nav-link.active {
+    @apply bg-indigo-600 text-white;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thumb-gray-400::-webkit-scrollbar-thumb {
+    background-color: #9CA3AF;
+    border-radius: 6px;
+  }
+  
+  .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+    background-color: #4B5563;
+    border-radius: 6px;
+  }
+  
+  .scrollbar-track-transparent::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+}
